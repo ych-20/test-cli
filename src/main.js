@@ -19,8 +19,8 @@ Reflect.ownKeys(mapActions).forEach((action) =>{
                 // console.log('path::',process.argv.slice(3))
                 // 分解命令 到文件里 有多少文件 就有多少配置 create config
                 // lee-cli create project-name ->[node,lee-cli,create,project-name]
-                console.log(process.argv);
-                console.log(path.resolve());
+                // console.log(process.argv);
+                // console.log(path.resolve());
                 require(path.join(__dirname,action))(...process.argv.slice(3));
             }
         })
